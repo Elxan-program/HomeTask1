@@ -1,0 +1,35 @@
+﻿@model HomeTask1.ViewModel.FoodViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>A;;</h1>
+    @foreach (var item in Model.Drinks)
+    {
+        <p>@item.Name</p>
+        <p>@item.Id</p>
+        <hr>
+    }
+    @foreach (var item in Model.Hot_Meals)
+    {
+        <p>@item.Name</p>
+        <p>@item.Id</p>
+        <hr>
+    }
+    @foreach (var item in Model.Fast_Foods)
+    {
+        <p>@item.Name</p>
+        <p>@item.Id</p>
+        <hr>
+    }
+</body>
+</html>

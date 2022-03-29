@@ -1,0 +1,23 @@
+﻿@model IEnumerable<HomeTask1.Entities.Drinks>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Drinks</title>
+</head>
+<body>
+    <h1>Drinks</h1>
+    @foreach (var item in Model)
+    {
+        <p>@item.Name</p>
+        <p>@item.Id</p>
+        <hr>
+    }
+</body>
+</html>
